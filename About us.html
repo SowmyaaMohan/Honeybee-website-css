@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        #navbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: #572b0e;
+            color: #FDE595;
+            font-size: 20px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        #links {
+            display: flex;
+            gap: 40px;
+            list-style: none;
+            align-items: center;
+        }
+
+        #links a {
+            color: #FDE595;
+            text-decoration: none;
+        }
+
+        #links a:hover {
+            color: #e59705;
+        }
+
+        @media (max-width:650px) {
+
+            #navbar,
+            footer {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+
+        }
+
+        #aboutus {
+            display: flex;
+            justify-content: center;
+            height: 90vh;
+            background-image: url(./bg.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            color: #572b0e;
+
+        }
+
+        #about {
+            width: 700px;
+            height: 430px;
+            margin-top: 100px;
+            background: linear-gradient(0deg, #e6b40e, #FDE595);
+            padding: 20px;
+            font-size: 20px;
+            border-radius: 30px;
+            box-shadow: 0px 5px 20px;
+            animation: 2s fadeIn ease-in-out;
+
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+
+            }
+        }
+
+        #footer {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background-color: #572b0e;
+            color: #FDE595;
+            font-size: 19px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <div>
+            <h5>BEE MAJESTY</h5>
+        </div>
+        <ul id="links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./productpage.html">About Us</a></li>
+            <li><a href="./productpage.html">Product</a></li>
+            <li><a href="./shoppingcart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        </ul>
+    </nav>
+    <div id="aboutus">
+
+        <div id="about">
+            <h2 style="text-align: center;">About Our Company</h2>
+            <p><strong>Bee Majesty</strong> is built on the belief that honey should be pure,
+                natural, and full of goodness. We are committed to bringing you 100% real honey
+                sourced directly from nature, without any additives or processing. </p>
+
+            <p>Our honey comes from trusted, eco-friendly beekeepers who care for their bees and
+                the environment. From golden sunflower fields to lush wildflower regions, every drop of
+                Bee Majesty honey reflects the richness of nature .</p>
+
+            <p>We take pride in offering a variety of honey types, each with its own unique flavor
+                and benefits. Whether it's for health, cooking, or daily wellness, Bee Majesty delivers
+                quality you can taste and trust. </p>
+
+            <p><strong>Bee Majesty</strong> is more than just a name - it's a symbol of purity,
+                tradition, and the royal care we put into every jar .</p>
+        </div>
+
+    </div>
+    <footer id="footer">
+        <section class="contact-home">
+            <i class="fas fa-home"></i>
+            <p>123,Main Road, <br>T Nagar, <br>Coimbatore- 641002</p>
+        </section>
+        <section class="contact-envelope">
+            <i class="fas fa-envelope"></i>
+            <p>beemajesty77@gmail.com</p>
+        </section>
+        <section class="contact-phone">
+            <i class="fas fa-phone"></i>
+            <p>+917835929434 <br> +919725037275</p>
+        </section>
+    </footer>
+
+</body>
+
+</html>

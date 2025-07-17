@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #navbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: #572b0e;
+            color: #FDE595;
+            font-size: 20px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        #links {
+            display: flex;
+            gap: 40px;
+            list-style: none;
+            align-items: center;
+        }
+
+        #links a {
+            color: #FDE595;
+            text-decoration: none;
+        }
+
+        #links a:hover {
+            color: #e59705;
+        }
+
+        #main {
+            background-image: url(./mainbg.jpeg);
+            height: 90vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+
+        }
+
+        #heading {
+            display: flex;
+            flex-direction: column;
+            margin-left: 50px;
+            font-size: 2em;
+            width: 500px;
+            color: antiquewhite;
+            animation: 2s fadeIn ease-in-out;
+
+        }
+
+        button {
+            padding: 10px;
+            border: none;
+            border-radius: 30px;
+            font-size: 17px;
+            background-color: rgb(221, 129, 0);
+        }
+
+        button:hover {
+            transform: scale(1.1);
+
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <div>
+            <h5>BEE MAJESTY</h5>
+        </div>
+        <ul id="links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./About us.html">About Us</a></li>
+            <li><a href="./productpage.html">Product</a></li>
+            <li><a href="./shoppingcart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+        </ul>
+    </nav>
+    <div id="main">
+        <div id="heading">
+            <h2>Nature's Sweetest Gift!!</h2>
+            <p>1oo% Pure, Raw ,and Organic Honey Straight from Hive to your Home!!</p>
+            <a href="./productpage.html"><button style="width: 130px;">Shop Now</button></a>
+        </div>
+    </div>
+
+</body>
+
+</html>
